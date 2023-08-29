@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+  }
+  
+  .movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .movie-poster {
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .movie-poster img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  .movie-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+  }
+  
